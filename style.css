@@ -1,0 +1,1396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@charset "utf-8";
+#sample-popup-switch {
+  display: none;
+}
+.sample-popup-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.sample-popup-content {
+  display: inline-block;
+  position: fixed;
+  width: 60%;
+  z-index: 1100;
+  background: #fff;
+  padding: 2%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+.sample-popup-content {
+  font-size: 1.4rem;
+  text-align: center;
+}
+#topattention {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+}
+#topattention p {
+  font-size: 1.4rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.3;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+body {
+  position: relative;
+}
+.inner80 {
+  width: 80%;
+  margin: 0 auto;
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(0deg) translate(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg) translateX(5rem);
+    opacity: 0;
+  }
+}
+.index-menu-tax {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.theday {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  header {
+    background: url(img/bk-head.jpg) no-repeat top;
+    background-size: 100%;
+  }
+  #header-container {
+    margin: 0 auto;
+  }
+  #header-reserve {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+  }
+  #logo {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+  #eyecatch {
+    background: url(img/eyecatch.png) center top no-repeat;
+    background-size: 200%;
+    margin-top: 4rem;
+  }
+  #eyecatch h2 {
+    width: 83%;
+    margin: 0 auto;
+    padding: 6rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    letter-spacing: 0.7rem;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000;
+  }
+  #menu-container {
+    background: url(img/bk-menu.jpg) no-repeat center;
+  }
+  #menu-main {
+    margin: 5rem 0;
+  }
+  .menu-main-title {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .menu-cobox {
+    margin-top: 3rem;
+  }
+  .menu-box {
+    margin-bottom: 2rem;
+  }
+  .menu-discri {
+    margin-top: 1rem;
+  }
+  .menu-discri h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .menu-discri p {
+    background: #fff;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  #menu-attention p {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .drink-menu-contents p {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    border: 0.3rem double #555;
+  }
+  #drink-menu h3 {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .grandmenu {
+    background: url(img/line-oragen.png) top 5rem center repeat-x;
+  }
+  .drinkmenu {
+    background: url(img/line-blue.png) top 5rem center repeat-x;
+  }
+  #index-kodawari {
+    background: url(img/line-green.png) top 240px center repeat-x;
+    margin-top: 10rem;
+  }
+  #index-kodawari-contents {
+    margin-top: 5rem;
+  }
+  #index-sozai {
+    width: 90%;
+    margin: 4rem auto 0;
+  }
+  #index-sozai-image {
+    margin: 0 auto;
+  }
+  #index-sozai-discri {
+    margin-top: 2rem;
+  }
+  #index-sozai-discri p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    letter-spacing: 0.3rem;
+  }
+  #index-kodawari-discri {
+    margin-top: 2rem;
+  }
+  #index-kodawarip {
+    font-size: 2rem;
+  }
+  #index-kodawarih3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .index-kodawari-nouka {
+    margin-top: 4rem;
+  }
+  .index-kodawari-nouka h4 {
+    font-size: 1.9rem;
+  }
+  .index-kodawaripdisc {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+  }
+  .index-machiko-link {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    border: 0.1rem solid #999;
+  }
+  .index-machiko-link a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    color: #1a1a1a;
+  }
+  .index-machiko-link a img {
+    width: 15%;
+    margin-left: 3%;
+    animation: sdb 2s infinite;
+  }
+  #index-infomation-container {
+    width: 90%;
+    margin: 15rem auto 0;
+  }
+  #index-infomation h2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+  #index-infomation-contents {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+  #index-infomation-contents dl {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem dotted #4d4d4d;
+  }
+  #index-infomation-contents dl a {
+    color: #000;
+    text-decoration: none;
+  }
+  #index-insta {
+    margin-top: 5rem;
+  }
+  #index-insta h2 {
+    width: 13%;
+    margin: 0 auto;
+  }
+  footer {
+    background: url(img/bk-footer.jpg) no-repeat bottom;
+    background-size: 100%;
+    padding-bottom: 10rem;
+  }
+  #footer-contents {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #footer-map {
+    margin-top: 5rem;
+  }
+  #footer-map iframe {
+    width: 100%;
+  }
+  #footer-guide {
+    width: 90%;
+    margin: 1rem auto 0;
+  }
+  #footer-guide h2 {
+    margin: 2rem auto;
+  }
+  #footer-guide-adresso {
+    margin-top: 3rem;
+  }
+  #footer-guide-adresso dl {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+  }
+  #footer-guide-adresso dt {
+    width: 30%;
+  }
+  #footer-guide-adresso dd {
+    width: 67%;
+  }
+  #page-container {
+    margin-top: 4rem;
+  }
+  #page-contents h2 {
+    width: 40%;
+    margin: 0 auto;
+  }
+  #single-contents {
+    margin-top: 4rem;
+  }
+  #single-contents h3 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 0.2rem dashed #ffa785;
+  }
+  #single-box {
+    width: 70%;
+    margin: 1.5rem auto 0;
+  }
+  p#single-date {
+    text-align: right;
+    font-size: 1.4rem;
+  }
+  #single-box img {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+  #single-body {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+  }
+  #takereseve-contents {
+    width: 90%;
+    margin: 5rem auto;
+  }
+  #aforms-eats-form-1 {
+    margin: 0 auto;
+  }
+  .monthly-calendar caption {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .monthly-calendar table th,
+  .monthly-calendar table td,
+  .day-calendar table th,
+  .day-calendar table td {
+    font-size: 1.6rem;
+  }
+  .monthly-prev-next {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+  .day-calendar h3 {
+    display: none;
+  }
+  .day-calendar p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .day-calendar table {
+    margin: 2rem auto 0;
+  }
+  .day-calendar table th {
+    padding: 1rem 0;
+  }
+  #booking-form {
+    font-size: 1.6rem;
+  }
+  #booking-form table th,
+  #booking-form table td,
+  #booking-form input,
+  #booking-form textarea,
+  legend {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  header {
+    background: url(img/bk-head.jpg) no-repeat top;
+    background-size: 100%;
+  }
+  #header-container {
+    margin: 0 auto;
+  }
+  #header-reserve {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+  }
+  .header-reserve-box {
+    width: 37%;
+  }
+  .header-reserve-box2 {
+    width: 63%;
+  }
+  #logo {
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+  #eyecatch {
+    background: url(img/eyecatch.png) center top no-repeat;
+    background-size: 95%;
+    margin-top: 4rem;
+  }
+  #eyecatch h2 {
+    width: 83%;
+    margin: 0 auto;
+    padding: 10rem 0;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    letter-spacing: 0.7rem;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000;
+  }
+  #menu-container {
+    background: url(img/bk-menu.jpg) no-repeat center;
+  }
+  #menu-main {
+    margin: 5rem auto;
+  }
+  .menu-main-title {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .menu-cobox {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-box {
+    width: 49%;
+    margin-bottom: 2rem;
+  }
+  .menu-discri {
+    margin-top: 1rem;
+  }
+  .menu-discri h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .menu-discri p {
+    background: #fff;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  #menu-attention p {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .drink-menu-contents p {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    border: 0.3rem double #555;
+  }
+  #drink-menu {
+    margin: 0 auto;
+  }
+  #drink-menu h3 {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .grandmenu {
+    background: url(img/line-oragen.png) top 5rem center repeat-x;
+  }
+  .drinkmenu {
+    background: url(img/line-blue.png) top 5rem center repeat-x;
+  }
+  #index-kodawari {
+    background: url(img/line-green.png) top 240px center repeat-x;
+    margin-top: 10rem;
+  }
+  #index-kodawari-contents {
+    margin-top: 5rem;
+  }
+  #index-sozai {
+    width: 90%;
+    margin: 4rem auto 0;
+  }
+  #index-sozai-image {
+    margin: 0 auto;
+  }
+  #index-sozai-discri {
+    margin-top: 2rem;
+  }
+  #index-sozai-discri p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    letter-spacing: 0.3rem;
+  }
+  #index-kodawari-discri {
+    margin-top: 2rem;
+  }
+  #index-kodawarip {
+    font-size: 2rem;
+  }
+  #index-kodawarih3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .index-kodawari-nouka {
+    margin-top: 4rem;
+  }
+  .index-kodawari-nouka h4 {
+    font-size: 1.9rem;
+  }
+  .index-kodawaripdisc {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+  }
+  .index-machiko-link {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    border: 0.1rem solid #999;
+  }
+  .index-machiko-link a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    color: #1a1a1a;
+  }
+  .index-machiko-link a img {
+    width: 15%;
+    margin-left: 3%;
+    animation: sdb 2s infinite;
+  }
+  #index-infomation-container {
+    width: 90%;
+    margin: 15rem auto 0;
+  }
+  #index-infomation h2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+  #index-infomation-contents {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+  #index-infomation-contents dl {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem dotted #4d4d4d;
+  }
+  #index-infomation-contents dl a {
+    color: #000;
+    text-decoration: none;
+  }
+  #index-insta {
+    margin-top: 5rem;
+  }
+  #index-insta h2 {
+    width: 13%;
+    margin: 0 auto;
+  }
+  footer {
+    background: url(img/bk-footer.jpg) no-repeat bottom;
+    background-size: 100%;
+    padding-bottom: 10rem;
+  }
+  #footer-contents {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #footer-map {
+    margin-top: 5rem;
+  }
+  #footer-map iframe {
+    width: 100%;
+  }
+  #footer-guide {
+    width: 90%;
+    margin: 1rem auto 0;
+  }
+  #footer-guide h2 {
+    margin: 2rem auto;
+  }
+  #footer-guide-adresso {
+    margin-top: 3rem;
+  }
+  #footer-guide-adresso dl {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+  }
+  #footer-guide-adresso dt {
+    width: 30%;
+  }
+  #footer-guide-adresso dd {
+    width: 67%;
+  }
+  #page-container {
+    margin-top: 4rem;
+  }
+  #page-contents h2 {
+    width: 40%;
+    margin: 0 auto;
+  }
+  #single-contents {
+    margin-top: 4rem;
+  }
+  #single-contents h3 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 0.2rem dashed #ffa785;
+  }
+  #single-box {
+    width: 70%;
+    margin: 1.5rem auto 0;
+  }
+  p#single-date {
+    text-align: right;
+    font-size: 1.4rem;
+  }
+  #single-box img {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+  #single-body {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+  }
+  #takereseve-contents {
+    width: 90%;
+    margin: 5rem auto;
+  }
+  #aforms-eats-form-1 {
+    margin: 0 auto;
+  }
+  .monthly-calendar caption {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .monthly-calendar table th,
+  .monthly-calendar table td,
+  .day-calendar table th,
+  .day-calendar table td {
+    font-size: 1.6rem;
+  }
+  .monthly-prev-next {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+  .day-calendar h3 {
+    display: none;
+  }
+  .day-calendar p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .day-calendar table {
+    margin: 2rem auto 0;
+  }
+  .day-calendar table th {
+    padding: 1rem 0;
+  }
+  #booking-form {
+    font-size: 1.6rem;
+  }
+  #booking-form table th,
+  #booking-form table td,
+  #booking-form input,
+  #booking-form textarea,
+  legend {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header {
+    background: url(img/bk-head.jpg) no-repeat top;
+  }
+  #header-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #header-reserve {
+    width: 30%;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-reserve-box2 {
+    margin-left: 1rem;
+  }
+  #logo {
+    width: 12%;
+    margin: 4rem auto 0;
+  }
+  #eyecatch {
+    background: url(img/eyecatch.png) center top no-repeat;
+    margin-top: 4rem;
+  }
+  #eyecatch h2 {
+    padding: 8rem 0;
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 2.2;
+    letter-spacing: 0.6rem;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000;
+  }
+  #menu-container {
+    background: url(img/bk-menu.jpg) no-repeat center;
+    margin-top: 15rem;
+  }
+  #menu-main {
+    margin-top: 12rem;
+  }
+  .menu-main-title {
+    width: 13%;
+    margin: 0 auto;
+  }
+  .menu-cobox {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .menu-box {
+    width: 30%;
+    margin: 0 2% 4% 2%;
+  }
+  .menu-discri {
+    margin-top: 1rem;
+  }
+  .menu-discri h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .menu-discri p {
+    background: #fff;
+    margin-top: 1rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  #menu-attention p {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .drink-menu-contents p {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    border: 0.3rem double #555;
+  }
+  #drink-menu h3 {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .grandmenu {
+    background: url(img/line-oragen.png) top 18rem center repeat-x;
+  }
+  .drinkmenu {
+    background: url(img/line-blue.png) top 8rem center repeat-x;
+  }
+  #index-kodawari {
+    background: url(img/line-green.png) top 240px center repeat-x;
+    margin-top: 10rem;
+  }
+  #index-kodawari-contents {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  #index-sozai {
+    width: 70%;
+    margin: 4rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #index-sozai-image {
+    width: 57%;
+  }
+  #index-sozai-discri {
+    width: 40%;
+  }
+  #index-sozai-discri p {
+    font-size: 1.7rem;
+    line-height: 3;
+    letter-spacing: 0.3rem;
+  }
+  #index-kodari-image {
+    width: 48%;
+  }
+  #index-kodawari-discri {
+    width: 46%;
+    margin-top: 8.5rem;
+  }
+  #index-kodawarip {
+    font-size: 2rem;
+  }
+  #index-kodawarih3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .index-kodawari-nouka {
+    margin-top: 4rem;
+  }
+  .index-kodawari-nouka h4 {
+    font-size: 1.9rem;
+  }
+  .index-kodawaripdisc {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    letter-spacing: 0.3rem;
+  }
+  .index-machiko-link {
+    width: 60%;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    border: 0.1rem solid #999;
+  }
+  .index-machiko-link a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    color: #1a1a1a;
+  }
+  .index-machiko-link a img {
+    width: 15%;
+    margin-left: 3%;
+    animation: sdb 2s infinite;
+  }
+  #index-infomation-container {
+    width: 80%;
+    margin: 15rem auto 0;
+  }
+  #index-infomation {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #index-infomation h2 {
+    width: 27%;
+    margin: 0 auto;
+  }
+  #index-infomation-contents {
+    width: 80%;
+    margin: 3rem auto 0;
+    font-size: 1.7rem;
+  }
+  #index-infomation-contents dl {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem dotted #4d4d4d;
+  }
+  #index-infomation-contents dl a {
+    color: #000;
+    text-decoration: none;
+  }
+  #index-insta {
+    width: 48%;
+    margin: 5rem auto 0;
+  }
+  #index-insta h2 {
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer {
+    background: url(img/bk-footer.jpg) no-repeat;
+  }
+  #footer-contents {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  #footer-map {
+    width: 40%;
+  }
+  #footer-map iframe {
+    width: 100%;
+  }
+  #footer-guide {
+    width: 55%;
+    margin-left: 5rem;
+  }
+  #footer-guide h2 {
+    width: 60%;
+  }
+  #footer-guide-adresso {
+    margin-top: 3rem;
+  }
+  #footer-guide-adresso dl {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+  }
+  #footer-guide-adresso dt {
+    width: 20%;
+  }
+  #footer-guide-adresso dd {
+    width: 77%;
+  }
+  #page-container {
+    margin-top: 10rem;
+  }
+  #page-contents h2 {
+    width: 15%;
+    margin: 0 auto;
+  }
+  #single-contents {
+    margin-top: 4rem;
+  }
+  #single-contents h3 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    border-bottom: 0.2rem dashed #ffa785;
+  }
+  #single-box {
+    width: 40%;
+    margin: 1.5rem auto 0;
+  }
+  p#single-date {
+    text-align: right;
+    font-size: 1.4rem;
+  }
+  #single-box img {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  #single-body {
+    margin-top: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    letter-spacing: 0.3rem;
+  }
+  #takereseve-contents {
+    width: 50%;
+    margin: 5rem auto;
+  }
+  #aforms-eats-form-1 {
+    margin: 0 auto;
+  }
+  .monthly-calendar caption {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .monthly-calendar table th,
+  .monthly-calendar table td,
+  .day-calendar table th,
+  .day-calendar table td {
+    font-size: 1.6rem;
+  }
+  .monthly-prev-next {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+  .day-calendar h3 {
+    display: none;
+  }
+  .day-calendar p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .day-calendar table {
+    margin: 2rem auto 0;
+  }
+  .day-calendar table th {
+    padding: 1rem 0;
+  }
+  #booking-form {
+    font-size: 1.6rem;
+  }
+  #booking-form table th,
+  #booking-form table td,
+  #booking-form input,
+  #booking-form textarea,
+  legend {
+    font-size: 1.6rem;
+  }
+}
+@charset "utf-8";
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.4;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  font-family: "Montserrat", "貂ｸ繧ｴ繧ｷ繝�け", YuGothic,
+    "繝偵Λ繧ｮ繝手ｧ偵ざ ProN W3", "Hiragino Kaku Gothic ProN", "繝｡繧､繝ｪ繧ｪ",
+    Meiryo, sans-serif;
+  color: #2f2725;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+figcaption,
+figure,
+main {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  border-style: none;
+  width: 100%;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details,
+menu {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+canvas {
+  display: inline-block;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+.monthly-calendar {
+  clear: both;
+  font-family: sans-serif;
+  margin-bottom: 1.5rem;
+}
+.monthly-calendar table {
+  width: 98%;
+}
+.monthly-calendar caption {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.monthly-calendar th {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.week-title.sun,
+.day-box.sun .day-number {
+  color: tomato;
+}
+.week-title.sat,
+.day-box.sat .day-number {
+  color: #4169e1;
+}
+.day-box.holiday .day-number {
+  color: tomato;
+}
+.monthly-calendar th,
+.monthly-calendar td {
+  text-align: center;
+}
+.monthly-calendar td {
+  padding: 6px 0;
+}
+.day-box.no-day {
+  background-color: #f0f0f0;
+}
+.day-box.today {
+  background-color: #ffffe0;
+}
+a.calendar-daylink {
+  display: block;
+}
+.monthly-prev {
+  float: left;
+}
+.monthly-next {
+  float: right;
+  margin-right: 1rem;
+}
+.calendar-mark {
+  color: #888;
+  font-size: 1.4rem;
+}
+.day-calendar {
+  font-family: sans-serif;
+  margin-bottom: 1.5rem;
+}
+.day-calendar h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+.day-calendar table {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 1px 5px;
+  width: 80%;
+}
+.day-calendar th,
+.day-calendar td {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+  vertical-align: middle;
+  width: 50%;
+}
+th.day-left {
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #ddd;
+  line-height: 2.5rem;
+}
+th.day-right {
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ddd;
+}
+td.day-right {
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1.5rem;
+}
+a.booking-timelink {
+  display: block;
+}
+.content-form fieldset {
+  border: 1px solid #ddd;
+  padding: 10px 0 0 10px;
+  margin: 0 0 1.5rem 0;
+  width: 99%;
+}
+.content-form legend {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0 5px;
+}
+.content-form table {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 5px;
+  margin: 0 0 5px 0;
+  width: 99%;
+}
+.content-form th,
+.content-form td {
+  border-top: none;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  padding: 2px;
+  vertical-align: middle;
+}
+.content-form th {
+  font-size: 1rem;
+  line-height: 2.2rem;
+  padding-right: 10px;
+  text-align: right;
+  vertical-align: top;
+  width: 30%;
+}
+.content-form td {
+  font-size: 0.9rem;
+}
+.content-form input,
+.content-form textarea {
+  padding: 3px;
+  margin-bottom: 3px;
+  font-size: 1rem;
+}
+.content-form button {
+  padding: 3px 7px;
+}
+.content-text.small {
+  width: 3rem;
+}
+.content-text.medium {
+  width: 48%;
+}
+.content-text.fat {
+  width: 95%;
+}
+.input-number {
+  float: left;
+  margin-right: 1rem;
+  text-align: center;
+}
+input.right {
+  text-align: right;
+}
+.content-form .error-message {
+  clear: both;
+  color: red;
+}
+.content-form .required {
+  color: red;
+}
+.content-form input.booking-option-number {
+  text-align: right;
+  width: 3rem;
+}
+.content-form label.field-item {
+  margin-right: 0.4rem;
+}
+.content-form label.field-item input {
+  margin-right: 0.15rem;
+}
+.content-form select {
+  font-size: 1rem;
+  padding: 0.1rem 0.15rem;
+}
